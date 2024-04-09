@@ -1,2 +1,2 @@
-import"./assets/modulepreload-polyfill-3cfb730f.js";/* empty css                      */console.log("Snackbar");
+import"./assets/modulepreload-polyfill-3cfb730f.js";/* empty css                      */import{i}from"./assets/vendor-77e16229.js";document.querySelector(".form").addEventListener("submit",function(o){o.preventDefault();const s=this.elements.delay,r=this.elements.state,t=parseInt(s.value);new Promise((e,l)=>{setTimeout(()=>{r.value==="fulfilled"?e(t):l(t)},t)}).then(e=>{i.success({title:"Success",message:`✅ Fulfilled promise in ${e}ms`})}).catch(e=>{i.error({title:"Error",message:`❌ Rejected promise in ${e}ms`})}),s.value=""});
 //# sourceMappingURL=commonHelpers2.js.map
