@@ -5,3 +5,65 @@
   |============================
 */
 @import url('./reset.css');
+
+
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: regular;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 360px; /* Ширина поля вводу та кнопки */
+  margin-top: 20px;
+}
+
+.field {
+  text-align: center;
+}
+
+.value {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 5px;
+}
+
+#datetime-picker {
+  width: 280px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #808080;
+  color: #2e2f42;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+button[data-start] {
+  width: 75px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #cfcfcf;
+  color: #989898;
+  font-size: 16px;
+  font-weight: medium;
+  border: none;
+  transition: background-color 0.3s ease; /* Анімація для зміни кольору фону */
+}
+
+button[data-start]:not([disabled]):hover {
+  background-color: #bfbfbf; /* Колір фону при наведенні */
+}
+
+
+
+
